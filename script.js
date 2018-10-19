@@ -28,4 +28,30 @@ function changeBGcolor(event){
 
 
 
+
+
+function redirectToGoogle(event){
+    window.location.assign("https://www.google.com/");
+}
+
+
+
 /* Task 4 using jQuery */
+$('#addText4').click(function(event){
+    var paragraph = $('<p>').text('Hello World');
+    $('#task4a').append(paragraph);
+})
+
+
+function changeBG(event){
+    var color =event.target.innerText.toLowerCase();
+    $('body').css('backgroundColor',color);
+}
+
+
+
+
+$("#sum").click(function(event){
+    var sum=number($("#num1").val())+number($("#num2").val());
+    $('#result').text(sum);
+})
